@@ -14,57 +14,93 @@
 
             <div
             class=""
-            style="background-image: url('../images/bg-main-mobile.png');height: 35vh; "
+            style="background-image: url('../images/bg-main-mobile.png');
+            padding-bottom: 6%;
+            position: relative;
+             "
             >
         
                 <div style="
-                /* height: 35vh; */
                 margin-left: 20%;
                 padding-top: 5%;
                 " class="m-10 h-96">
                     <img width="250px" src="../images/bg-card-back.png" alt="" srcset="">
                 </div>
-                <div class="">
+                <div 
+                class=""
+                style="
+                position: absolute;
+                top: 55%;
+                left: 5%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                " 
+                >
+                <div class=""
+                style="position: absolute; 
+                top: 0%;
+                margin: 6.5%;
+                text-align: center;
+
+                color: white;">
+                <div style="display: flex;  align-items: center;margin-bottom: 15px; " class="">
+                    <div style="border-radius: 50%; width: 30px; height: 30px; ; background-color: white; border: 1px solid white;" class=""></div>
+                    <div style="border-radius: 50%; margin-left: 5px; width: 15px; height: 15px;  border: 1px solid white;" class=""></div>
+                </div>
+                <h4>0000 0000 0000 0000</h4>
+                <div class=""
+                style="display: flex;
+                justify-content: space-between;
+                "
+                >
+                    <p>Jane Appleseed</p>
+                    <p>00/00</p>
+                </div>
+                </div>
                     <img width="250px" src="../images/bg-card-front.png" alt="" srcset="">
                 </div>
             </div>
-            <form action="">
-                <input type="text">
-                <input type="number" name="" id="">
+            <form style="margin-top: 20%; display: flex;flex-direction: column;padding: 4%; justify-content: space-between;" action="">
+                Cardholder Name
+                <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;"  type="text" placeholder="e.g. Jane Appleseed">
+                Card Number
+                <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;" type="number" name="" id="" placeholder="e.g. 1234 5678 9123 0000">
+                <div style="display: flex;" class="flex">
+                    <div style="display: flex; flex-direction: column;" class="">
+                        Exp. Date (MM/YY)
+                        <div class="">
+                            <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;width: 20%;" type="text" placeholder="MM" name="" id="">
+                            <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;width: 20%;" type="text" placeholder="YY" name="" id="">
+                            <!-- <input type="datetime" name="" id=""> -->
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;" class="">
+                        CVC
+                        <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;width: 35%;" type="number" name="" id="" placeholder=" e.g. 123">
+                    </div>
+                </div>
+                <button style="background-color: hsl(278, 68%, 11%);color: white;border-radius: 5px; padding: 3%;border: none;" type="submit"> Confirm</button>
             </form>
     </div>
    
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
 
-  000
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  
+  
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+  
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+ 
 
   <!-- Completed state start -->
 
-  Thank you!
+  <!-- Thank you!
   We've added your card details
   Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>    
+  </div>     -->
 </body>
 </html>

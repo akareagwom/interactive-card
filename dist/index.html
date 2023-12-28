@@ -15,7 +15,25 @@
             background-color: hsl(279, 6%, 55%);
         }
         .base{
+            /* width: 100%; */
             background-image: url('../images/bg-main-mobile.png');
+        }
+        form{
+            margin-top: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 4%;
+            justify-content: space-between;
+        }
+        .card-front{
+
+            position: absolute;
+            top: 70%;
+            left: 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .card-back{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 @media only screen and (min-width: 600px) {
   
@@ -26,28 +44,44 @@
 }
 @media screen and (min-width: 600px){
     form{
-        padding: 0;
+        padding: 6%;
         width: 45%;
-        margin-top: -20%;
-        margin-left: 25%;
+        margin-left: 15%;
+        margin-top: 5%;
     }
     .base{
       background-image: url('../images/bg-main-desktop.png');
       width: 30%;
+      height: 100vh;
       /* height: 240%; */
+    }
+    .card-back{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+    .card-back img{
+        width: 400px;
+    }
+    .card-front{
+        top: 13%;
+        left: 25%;
+    }
+    .card-front .imagecard{
+        width: 400px;
     }
     
 }
     </style>
 </head>
 <body>
-    <div style="font-family: Space Grotesk;" class="start">
+        <div style="font-family: Space Grotesk;" class="start">
 
             <div
             class="base"
             style="
             background-repeat: no-repeat;
-            padding-bottom: 10%;
+            /* padding-bottom: 10%; */
             padding-top: 5%;
             position: relative;
             font-family: Space Grotesk;
@@ -57,17 +91,11 @@
                 <div style="
                 margin-left: 20%;
                 padding-top: 5%;
-                " class="m-10 h-96">
+                " class="card-back">
                     <img width="250px" src="../images/bg-card-back.png" alt="" srcset="">
                 </div>
                 <div 
-                class=""
-                style="
-                position: absolute;
-                top: 55%;
-                left: 5%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                " 
+                class="card-front"
                 >
                 <div class=""
                 style="position: absolute; 
@@ -91,10 +119,12 @@
                     <p>00/00</p>
                 </div>
                 </div>
-                    <img width="250px" src="../images/bg-card-front.png" alt="" srcset="">
+                <div class="">
+                    <img class="imagecard" width="250px" src="../images/bg-card-front.png" alt="" srcset="">
+                </div>
                 </div>
             </div>
-            <form style="margin-top: 20%; display: flex;flex-direction: column;padding: 4%; justify-content: space-between;" action="">
+            <form style="" action="">
                 Cardholder Name
                 <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;"  type="text" placeholder="e.g. Jane Appleseed">
                 Card Number

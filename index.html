@@ -92,9 +92,13 @@
             >
         
                 <div style="
+                position: relative;
                 margin-left: 20%;
                 padding-top: 5%;
                 " class="card-back">
+                    <div  class="card-cvc">
+                        <h6 id="card-cvc" style="position: absolute; top: 50%; left: 60%; color: white;">000</h6>
+                    </div>
                     <img width="250px" src="./images/bg-card-back.png" alt="" srcset="">
                 </div>
                 <div 
@@ -145,7 +149,7 @@
                     </div>
                     <div style="display: flex; flex-direction: column;width: 45%;" class="">
                         CVC
-                        <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;" type="number" name="" id="" placeholder=" e.g. 123">
+                        <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;" type="number" name="" id="input-cvc" placeholder=" e.g. 123">
                     </div>
                 </div>
                 <button class="button" style=" background-color: hsl(278, 68%, 11%);  margin-top: 25px; color: white;border-radius: 5px; padding: 3%;border: none;" type="submit"> Confirm</button>
@@ -171,6 +175,9 @@
 
         const cardYear = document.getElementById('card-year');
         const inputYear = document.getElementById('input-year');
+
+        const cardCvc = document.getElementById('card-cvc');
+        const inputCvc = document.getElementById('input-cvc');
 
         console.log(inputNumber);
         // inputtext.innerText = ""

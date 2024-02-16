@@ -111,14 +111,14 @@
                     <img width="60px" src="./images/card-logo.svg" alt="" srcset="">
                 </div>
                 <div class=""></div>
-                <h6 style="font-size: 19px;">0000 0000 0000 0000</h6>
+                <h6 id="card-number" style="font-size: 19px;">0000 0000 0000 0000</h6>
                 <div class=""
                 style="display: flex;
                 justify-content: space-between;
                 font-size: 13px;
                 "
                 >
-                    <p style="text-transform: uppercase;">Jane Appleseed</p>
+                    <p id="card-name" style="text-transform: uppercase;">Jane Appleseed</p>
                     <p>00/00</p>
                 </div>
                 </div>
@@ -154,7 +154,13 @@
 
   
   
-
+    <script>
+        var cardNumber = document.getElementById('card-number');
+        const cardName = document.getElementById('card-name');
+        console.log(cardName);
+        // inputtext.innerText = ""
+        
+    </script>
   
 
  

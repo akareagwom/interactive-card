@@ -119,7 +119,7 @@
                 "
                 >
                     <p id="card-name" style="text-transform: uppercase;">Jane Appleseed</p>
-                    <p>00/00</p>
+                    <p id="card-month">00/00</p>
                 </div>
                 </div>
                 <div class="">
@@ -129,13 +129,13 @@
             </div>
             <form action="">
                 Cardholder Name
-                <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;"  type="text" placeholder="e.g. Jane Appleseed">
+                <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;"  type="text" id="input-name" placeholder="e.g. Jane Appleseed">
                 Card Number
                 <input style="border: 1px solid gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%;" type="number" name="" id="input-number" placeholder="e.g. 1234 5678 9123 0000">
                 <div style="display: flex;width: 100%;align-items: center;justify-content: space-between;" class="flex">
                     <div style="display: flex; flex-direction: column;" class="">
                         Exp. Date (MM/YY)
-                        <div style="display: flex; justify-content: space-between; width: 110%;" class="">
+                        <div style="display: flex; justify-content: space-between; width: 110%;" id="input-month" class="">
                             <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%; width: 65px;" type="text" placeholder="MM" name="" id="">
                             <input style="border: 1px solid  gray;border-radius: 5px; padding: 3%;margin-top: 2%;margin-bottom: 2%; width: 65px;" type="text" placeholder="YY" name="" id="">
                         </div>
@@ -161,6 +161,10 @@
 
 
         const cardName = document.getElementById('card-name');
+        const inputName = document.getElementById('input-name');
+
+        const cardMonth = document.getElementById('card-month');
+        const inputMonth = document.getElementById('input-month');
 
         console.log(inputNumber);
         // inputtext.innerText = ""

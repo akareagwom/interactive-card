@@ -191,8 +191,32 @@
         const completed = document.getElementById('thank');
         const form = document.querySelector("form")
 
+        function setCardNumber(e){
+            cardNumber.innerText=format(e.target.value);
+        }
+
+        function setCardName(e){
+            cardName.innerText= e.target.value;
+        }
+
+        function setCardMonth(e){
+            cardMonth.innerText= e.target.value;
+        }
+
+        function setCardYear(e){
+            cardYear.innerText= e.target.value;
+        }
+
+        function setCardCvc(e){
+            cardCvc.innerText= e.target.value
+        }
+
+        function format(){
+
+        }
+
         console.log(inputNumber);
-        // inputtext.innerText = ""
+     
         
     </script>
   

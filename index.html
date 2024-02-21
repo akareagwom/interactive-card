@@ -211,9 +211,58 @@
             cardCvc.innerText= e.target.value
         }
 
-        function format(e){
-            
+        function format(s){
+            return s.toString().replace(/\d{4}(?=.)/g,"$&")
         }
+        // function handleSubmit(e) {
+        //     e.preventDefault();
+        //     if(!inputName){
+        //         inputName.classList.add("error");
+        //         inputName.parentElement.classList.add("error_message");
+        //     }else{
+        //         inputName.classList.remove("error");
+        //         inputName.parentElement.classList.remove("error");
+        //     }
+
+        //     if(!inputNumber){
+        //         inputNumber.classList.add("error");
+        //         inputNumber.parentElement.classList.add("error_message");
+        //     }else{
+        //         inputNumber.classList.remove("error");
+        //         inputNumber.parentElement.classList.remove("error");
+        //     }
+
+        //     if(!inputMonth){
+        //         inputMonth.classList.add("error");
+        //         inputMonth.parentElement.classList.add("error_message");
+        //     }else{
+        //         inputMonth.classList.remove("error");
+        //         inputMonth.parentElement.classList.remove("error");
+        //     }
+
+        //     if(!inputYear){
+        //         inputYear.classList.add("error");
+        //         inputYear.parentElement.classList.add("error_message");
+        //     }else{
+        //         inputYear.classList.remove("error");
+        //         inputYear.parentElement.classList.remove("error");
+        //     }
+
+        //     if(!inputCvc){
+        //         inputCvc.classList.add("error");
+        //         inputCvc.parentElement.classList.add("error_message");
+        //     }else{
+        //         inputCvc.classList.remove("error");
+        //         inputCvc.parentElement.classList.remove("error");
+        //     }
+        // }
+
+        inputNumber.addEventListener("keyup",setCardNumber);
+        inputName.addEventListener("keyup",setCardName);
+        inputMonth.addEventListener("change", setCardMonth);
+        inputYear.addEventListener("change", setCardYear);
+        inputCvc.addEventListener("keyup", setCardCvc);
+        submitBtn.addEventListener("click",handleSubmit)
 
         console.log(inputNumber);
      

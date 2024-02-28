@@ -42,6 +42,12 @@
         .card-back{
             /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
         }
+        .card-cvc{
+            position: absolute;
+            top: 50%; 
+            left: 60%; 
+            color: white;
+        }
 @media only screen and (min-width: 600px) {
   
   .start{
@@ -77,6 +83,12 @@
     .card-front .imagecard{
         width: 400px;
     }
+    .card-cvc h6{
+        left: 80%;
+        position: absolute;
+        margin-left: 50%;
+
+    }
     
 }
     </style>
@@ -97,7 +109,7 @@
                 padding-top: 5%;
                 " class="card-back">
                     <div  class="card-cvc">
-                        <h6 id="card-cvc" style="position: absolute; top: 50%; left: 60%; color: white;">000</h6>
+                        <h6 id="card-cvc" style="">000</h6>
                     </div>
                     <img width="250px" src="./images/bg-card-back.png" alt="" srcset="">
                 </div>
@@ -259,8 +271,8 @@
 
         inputNumber.addEventListener("keyup",setCardNumber);
         inputName.addEventListener("keyup",setCardName);
-        inputMonth.addEventListener("change", setCardMonth);
-        inputYear.addEventListener("change", setCardYear);
+        inputMonth.addEventListener("keyup", setCardMonth);
+        inputYear.addEventListener("keyup", setCardYear);
         inputCvc.addEventListener("keyup", setCardCvc);
         submitBtn.addEventListener("click",handleSubmit)
 
